@@ -53,13 +53,9 @@ int main(int argc, char *argv[])
     bigger = num_1;
   }
 
-  else if (num_1 < num_2)
-  {
-    bigger = num_2;
-  }
   else
   {
-    cout <<"Podane liczby sa rowne" << endl;
+    bigger = num_2;
   }
 
   if (bigger % 2 == 0) {
