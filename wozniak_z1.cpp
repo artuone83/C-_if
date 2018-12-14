@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
   string name;
   char gender;
   int num_1, num_2, bigger;
-  //float score, num_1_equ, num_2_equ;
+  float score, num_1_equ, num_2_equ;
 
   cout << "Podaj imie" << endl;
   cin >> name;
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
       cout << "Wieksza liczba jest parzysta" << endl;
     }
   }
-  else
+  else if (num_1 < num_2)
   {
     bigger = num_2;
     if (bigger % 2 == 0)
@@ -71,9 +71,12 @@ int main(int argc, char *argv[])
     }
   }
 
-  //score = num_1_equ / (num_2_equ * 2);
+  num_1_equ = num_1;
+  num_2_equ = num_2;
 
-  //cout << score << endl;
+  score = num_1_equ / (num_2_equ * 2);
+
+  cout << score << endl;
 
   system("pause");
 
