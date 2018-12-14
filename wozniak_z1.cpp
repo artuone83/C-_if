@@ -51,19 +51,26 @@ int main(int argc, char *argv[])
   if (num_1 > num_2 )
   {
     bigger = num_1;
+    if (bigger % 2 == 0)
+    {
+      cout << "Wieksza liczba jest parzysta" << endl;
+    }else
+    {
+      cout << "Wieksza liczba jest parzysta" << endl;
+    }
   }
-
   else
   {
     bigger = num_2;
+    if (bigger % 2 == 0)
+    {
+      cout << "Wieksza liczba jest parzysta" << endl;
+    }else
+    {
+      cout << "Wieksza liczba jest parzysta" << endl;
+    }
   }
 
-  if (bigger % 2 == 0) {
-    cout << "Wieksza liczba jest parzysta" << endl;
-  }else
-  {
-    cout << "Wieksza liczba jest nieparzysta" << endl;
-  }
   //score = num_1_equ / (num_2_equ * 2);
 
   //cout << score << endl;
