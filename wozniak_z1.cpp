@@ -33,72 +33,27 @@ int main(int argc, char *argv[])
   cout << "Podaj dwie liczby" << endl;
   cin >> num_1 >> num_2;
 
-  if (num_1 > num_2 )
+  if (num_2 == 0)
   {
-    bigger = num_1;
-    if (bigger % 2 == 0)
-    {
-      cout << "Wieksza liczba jest parzysta" << endl;
-      if (bigger < 10 && bigger > -10)
-      {
-        cout << "Wieksza liczba jest jednocyfrowa" << endl;
-      }
-      else if (bigger > 10 && bigger < 100)
-      {
-        cout << "Wieksza liczba jest dwucyfrowa" << endl;
-      }
-      else if (bigger < -9 && bigger > -100)
-      {
-        cout << "Wieksza liczba jest dwucyfrowa" << endl;
-      }
-      else
-      {
-        cout << "Wieksza liczba jest inna" << endl;
-      }
-    }
-    else
-    {
-      cout << "Wieksza liczba jest nieparzysta" << endl;
-      if (bigger < 10 && bigger > -10)
-      {
-        cout << "Wieksza liczba jest jednocyfrowa" << endl;
-      }
-      else if (bigger > 10 && bigger < 100)
-      {
-        cout << "Wieksza liczba jest dwucyfrowa" << endl;
-      }
-      else if (bigger < -9 && bigger > -100)
-      {
-        cout << "Wieksza liczba jest dwucyfrowa" << endl;
-      }
-      else
-      {
-        cout << "Wieksza liczba jest inna" << endl;
-      }
-    }
-  }
-  else
+    cout << "Nie dzielimy przez 0" << endl;
+    system("PAUSE");
+  }else
   {
-    bigger = num_2;
-    if (num_2 == 0)
+    if (num_1 > num_2 )
     {
-      cout << "Nie dzielimy przez 0" << endl;
-      system("PAUSE");
-    }
-    else
-    {
+      bigger = num_1;
       if (bigger % 2 == 0)
       {
         cout << "Wieksza liczba jest parzysta" << endl;
-        if (bigger < 10 && bigger > -10)
+        if (bigger <= 9 && bigger >= -9)
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
         }
-        else if (bigger > 10 && bigger < 100)
+        else if (bigger >= 10 && bigger < 100)
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
-        else if (bigger < -9 && bigger > -100)
+        else if (bigger <= -9 && bigger >= -99)
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
@@ -109,14 +64,16 @@ int main(int argc, char *argv[])
       }
       else
       {
-        cout << "Wieksza liczba jest nieparzysta" << endl;
-        if (bigger < 10 && bigger > -10)
+        cout << "Wieksza liczba jest parzysta" << endl;
+        if (bigger <= 9 && bigger >= -9)
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
-        }else if (bigger > 10 && bigger < 100)
+        }
+        else if (bigger >= 10 && bigger < 100)
         {
-        cout << "Wieksza liczba jest dwucyfrowa" << endl;
-        }else if (bigger < -9 && bigger > -100)
+          cout << "Wieksza liczba jest dwucyfrowa" << endl;
+        }
+        else if (bigger <= -9 && bigger >= -99)
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
@@ -126,6 +83,50 @@ int main(int argc, char *argv[])
         }
       }
     }
+    else
+    {
+      bigger = num_2;
+
+      if (bigger % 2 == 0)
+      {
+        cout << "Wieksza liczba jest parzysta" << endl;
+        if (bigger <= 9 && bigger >= -9)
+        {
+          cout << "Wieksza liczba jest jednocyfrowa" << endl;
+        }
+        else if (bigger >= 10 && bigger < 100)
+        {
+          cout << "Wieksza liczba jest dwucyfrowa" << endl;
+        }
+        else if (bigger <= -9 && bigger >= -99)
+        {
+          cout << "Wieksza liczba jest dwucyfrowa" << endl;
+        }
+        else
+        {
+          cout << "Wieksza liczba jest inna" << endl;
+        }
+      }
+      else
+      {
+        cout << "Wieksza liczba jest parzysta" << endl;
+        if (bigger <= 9 && bigger >= -9)
+        {
+          cout << "Wieksza liczba jest jednocyfrowa" << endl;
+        }
+        else if (bigger >= 10 && bigger < 100)
+        {
+          cout << "Wieksza liczba jest dwucyfrowa" << endl;
+        }
+        else if (bigger <= -9 && bigger >= -99)
+        {
+          cout << "Wieksza liczba jest dwucyfrowa" << endl;
+        }
+        else
+        {
+          cout << "Wieksza liczba jest inna" << endl;
+        }
+      }
   }
 
   num_1_equ = num_1;
@@ -136,6 +137,8 @@ int main(int argc, char *argv[])
   cout << score << endl;
 
   system("PAUSE");
+  }
+
 
   return 0;
 }
