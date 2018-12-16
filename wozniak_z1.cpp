@@ -33,12 +33,6 @@ int main(int argc, char *argv[])
   cout << "Podaj dwie liczby" << endl;
   cin >> num_1 >> num_2;
 
-  if (num_2 == 0)
-  {
-    cout << "Nie dzielimy przez 0" << endl;
-    system("PAUSE");
-  }else
-  {
     if (num_1 > num_2 )
     {
       bigger = num_1;
@@ -64,7 +58,7 @@ int main(int argc, char *argv[])
       }
       else
       {
-        cout << "Wieksza liczba jest parzysta" << endl;
+        cout << "Wieksza liczba jest nie parzysta" << endl;
         if (bigger <= 9 && bigger >= -9)
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
@@ -109,7 +103,7 @@ int main(int argc, char *argv[])
       }
       else
       {
-        cout << "Wieksza liczba jest parzysta" << endl;
+        cout << "Wieksza liczba jest nie parzysta" << endl;
         if (bigger <= 9 && bigger >= -9)
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
@@ -127,18 +121,22 @@ int main(int argc, char *argv[])
           cout << "Wieksza liczba jest inna" << endl;
         }
       }
+
+    if (num_2 == 0) {
+      cout << "Nie dzielimy przez 0" << endl;
+    }else
+    {
+      num_1_equ = num_1;
+      num_2_equ = num_2;
+
+      score = num_1_equ / (num_2_equ * 2);
+
+      cout << score << endl;
+
+      system("PAUSE");
+
+    }
   }
-
-  num_1_equ = num_1;
-  num_2_equ = num_2;
-
-  score = num_1_equ / (num_2_equ * 2);
-
-  cout << score << endl;
-
-  system("PAUSE");
-  }
-
 
   return 0;
 }
