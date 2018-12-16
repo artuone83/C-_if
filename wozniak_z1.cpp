@@ -43,11 +43,7 @@ int main(int argc, char *argv[])
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
         }
-        else if (bigger >= 10 && bigger < 100)
-        {
-          cout << "Wieksza liczba jest dwucyfrowa" << endl;
-        }
-        else if (bigger <= -9 && bigger >= -99)
+        else if ((bigger >= 10 && bigger < 100) || (bigger <= -9 && bigger >= -99))
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
@@ -63,11 +59,7 @@ int main(int argc, char *argv[])
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
         }
-        else if (bigger >= 10 && bigger < 100)
-        {
-          cout << "Wieksza liczba jest dwucyfrowa" << endl;
-        }
-        else if (bigger <= -9 && bigger >= -99)
+        else if ((bigger >= 10 && bigger < 100) || (bigger <= -9 && bigger >= -99))
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
@@ -88,11 +80,7 @@ int main(int argc, char *argv[])
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
         }
-        else if (bigger >= 10 && bigger < 100)
-        {
-          cout << "Wieksza liczba jest dwucyfrowa" << endl;
-        }
-        else if (bigger <= -9 && bigger >= -99)
+        else if ((bigger >= 10 && bigger < 100) || (bigger <= -9 && bigger >= -99))
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
@@ -108,11 +96,7 @@ int main(int argc, char *argv[])
         {
           cout << "Wieksza liczba jest jednocyfrowa" << endl;
         }
-        else if (bigger >= 10 && bigger < 100)
-        {
-          cout << "Wieksza liczba jest dwucyfrowa" << endl;
-        }
-        else if (bigger <= -9 && bigger >= -99)
+        else if ((bigger >= 10 && bigger < 100) || (bigger <= -9 && bigger >= -99))
         {
           cout << "Wieksza liczba jest dwucyfrowa" << endl;
         }
