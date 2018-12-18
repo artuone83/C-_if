@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
     {
       cout << "Wieksza liczba jest jednocyfrowa" << endl;
     }
-    else if ((bigger >= 10 && bigger <= 99) || (bigger <= -9 && bigger >= -99))
+    else if ((bigger >= 10 && bigger <= 99) || bigger >= -99)
     {
       cout << "Wieksza liczba jest dwucyfrowa" << endl;
     }
